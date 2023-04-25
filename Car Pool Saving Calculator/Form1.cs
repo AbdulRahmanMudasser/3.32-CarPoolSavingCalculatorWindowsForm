@@ -21,5 +21,21 @@ namespace Car_Pool_Saving_Calculator
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            // getting user input
+            decimal totalMilesDriven = Convert.ToDecimal(totalMilesDrivenTextBox.Text);
+            decimal costPerGallon = Convert.ToDecimal(costPerGallonTextBox.Text) / 100;     // converting to dollars
+            decimal averageMiles = Convert.ToDecimal(averageMilesTextBox.Text);
+            decimal parkingFee = Convert.ToDecimal(parkingFeeTextBox.Text) / 100;
+            decimal tolls = Convert.ToDecimal(tollsTextBox.Text) / 100;
+
+            // calculation
+            decimal costPerDay = ((totalMilesDriven / averageMiles) * costPerGallon) + parkingFee + tolls;
+
+            // displaying result
+            calculateLabel.Text = $"Your cost per day of driving to work is: ${costPerDay:0.00}";
+        }
     }
 }
