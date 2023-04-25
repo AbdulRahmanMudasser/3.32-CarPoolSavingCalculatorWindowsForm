@@ -35,7 +35,7 @@ namespace Car_Pool_Saving_Calculator
             decimal costPerDay = ((totalMilesDriven / averageMiles) * costPerGallon) + parkingFee + tolls;
 
             // displaying result
-            calculateLabel.Text = $"Your cost per day of driving to work is: ${costPerDay:0.00}";
+            calculateLabel.Text = $"Your cost per day of driving to work is: ${costPerDay : 0.00}";
         }
     }
 }
