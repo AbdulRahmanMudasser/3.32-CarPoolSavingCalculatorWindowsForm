@@ -16,5 +16,10 @@ namespace Car_Pool_Saving_Calculator
         {
             InitializeComponent();
         }
+
+        private void parkingFeeTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
