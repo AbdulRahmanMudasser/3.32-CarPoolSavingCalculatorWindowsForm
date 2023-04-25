@@ -38,7 +38,8 @@
             this.averageMilesTextBox = new System.Windows.Forms.TextBox();
             this.parkingFeeTextBox = new System.Windows.Forms.TextBox();
             this.tollsTextBox = new System.Windows.Forms.TextBox();
-            this.calculateLabel = new System.Windows.Forms.Label();
+            this.calculateTextBox = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // totalMilesDrivenLabel
@@ -73,7 +74,7 @@
             // 
             this.averageMilesLabel.AutoSize = true;
             this.averageMilesLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.averageMilesLabel.Location = new System.Drawing.Point(32, 173);
+            this.averageMilesLabel.Location = new System.Drawing.Point(32, 179);
             this.averageMilesLabel.Name = "averageMilesLabel";
             this.averageMilesLabel.Size = new System.Drawing.Size(286, 29);
             this.averageMilesLabel.TabIndex = 3;
@@ -83,7 +84,7 @@
             // 
             this.parkingFeeLabel.AutoSize = true;
             this.parkingFeeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.parkingFeeLabel.Location = new System.Drawing.Point(32, 240);
+            this.parkingFeeLabel.Location = new System.Drawing.Point(32, 246);
             this.parkingFeeLabel.Name = "parkingFeeLabel";
             this.parkingFeeLabel.Size = new System.Drawing.Size(339, 29);
             this.parkingFeeLabel.TabIndex = 4;
@@ -110,7 +111,7 @@
             // averageMilesTextBox
             // 
             this.averageMilesTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.averageMilesTextBox.Location = new System.Drawing.Point(508, 173);
+            this.averageMilesTextBox.Location = new System.Drawing.Point(508, 176);
             this.averageMilesTextBox.Name = "averageMilesTextBox";
             this.averageMilesTextBox.Size = new System.Drawing.Size(158, 35);
             this.averageMilesTextBox.TabIndex = 7;
@@ -118,7 +119,7 @@
             // parkingFeeTextBox
             // 
             this.parkingFeeTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.parkingFeeTextBox.Location = new System.Drawing.Point(508, 240);
+            this.parkingFeeTextBox.Location = new System.Drawing.Point(508, 246);
             this.parkingFeeTextBox.Name = "parkingFeeTextBox";
             this.parkingFeeTextBox.Size = new System.Drawing.Size(158, 35);
             this.parkingFeeTextBox.TabIndex = 8;
@@ -132,22 +133,31 @@
             this.tollsTextBox.Size = new System.Drawing.Size(158, 35);
             this.tollsTextBox.TabIndex = 9;
             // 
-            // calculateLabel
+            // calculateTextBox
             // 
-            this.calculateLabel.AutoSize = true;
-            this.calculateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.calculateLabel.Location = new System.Drawing.Point(32, 386);
-            this.calculateLabel.Name = "calculateLabel";
-            this.calculateLabel.Size = new System.Drawing.Size(113, 29);
-            this.calculateLabel.TabIndex = 10;
-            this.calculateLabel.Text = "Calculate";
+            this.calculateTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.calculateTextBox.Location = new System.Drawing.Point(508, 413);
+            this.calculateTextBox.Name = "calculateTextBox";
+            this.calculateTextBox.Size = new System.Drawing.Size(158, 35);
+            this.calculateTextBox.TabIndex = 11;
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(37, 403);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(202, 54);
+            this.button1.TabIndex = 12;
+            this.button1.Text = "Calculate";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 491);
-            this.Controls.Add(this.calculateLabel);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.calculateTextBox);
             this.Controls.Add(this.tollsTextBox);
             this.Controls.Add(this.parkingFeeTextBox);
             this.Controls.Add(this.averageMilesTextBox);
@@ -177,7 +187,8 @@
         private System.Windows.Forms.TextBox averageMilesTextBox;
         private System.Windows.Forms.TextBox parkingFeeTextBox;
         private System.Windows.Forms.TextBox tollsTextBox;
-        private System.Windows.Forms.Label calculateLabel;
+        private System.Windows.Forms.TextBox calculateTextBox;
+        private System.Windows.Forms.Button button1;
     }
 }
 
